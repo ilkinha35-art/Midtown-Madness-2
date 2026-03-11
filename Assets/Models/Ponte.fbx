@@ -1,0 +1,16 @@
+using UnityEngine;
+
+public class BridgeEffect : MonoBehaviour
+{
+    public Light[] luzesDecorativas;
+
+    void Update()
+    {
+        // Pisca luzes decorativas da ponte
+        float intensidade = Mathf.PingPong(Time.time, 1f);
+        foreach (Light luz in luzesDecorativas)
+        {
+            luz.intensity = intensidade;
+        }
+    }
+}
