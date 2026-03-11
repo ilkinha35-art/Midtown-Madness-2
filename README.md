@@ -22,3 +22,16 @@ Criar um jogo de corrida em mundo aberto com:
 ---
 
 ## 📂 Estrutura do Projeto
+midtown-clone/
+├── Assets/        # modelos 3D, texturas, sons
+├── Scripts/       # código do jogo
+├── Docs/          # documentação e design
+├── README.md
+└── LICENSE
+
+---
+
+## 🚀 Como Rodar
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/midtown-clone.git
