@@ -1,0 +1,13 @@
+using UnityEngine;
+
+public class RoadCollider : MonoBehaviour
+{
+    void Start()
+    {
+        // Garante que a rua tenha colisores para os carros
+        if (GetComponent<MeshCollider>() == null)
+        {
+            gameObject.AddComponent<MeshCollider>();
+        }
+    }
+}
