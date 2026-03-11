@@ -1,0 +1,14 @@
+using UnityEngine;
+
+public class BuildingLights : MonoBehaviour
+{
+    public Light[] janelas;
+
+    void Start()
+    {
+        foreach (Light luz in janelas)
+        {
+            luz.enabled = Random.value > 0.5f; // algumas janelas acesas
+        }
+    }
+}
