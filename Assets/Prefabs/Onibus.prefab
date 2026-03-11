@@ -1,0 +1,23 @@
+using UnityEngine;
+
+public class TrafficAIOnibus : MonoBehaviour
+{
+    public float velocidade = 3f; // ônibus mais lento
+    public float limiteZ = 50f;
+    private Vector3 posicaoInicial;
+
+    void Start()
+    {
+        posicaoInicial = transform.position;
+    }
+
+    void Update()
+    {
+        transform.Translate(Vector3.forward * velocidade * Time.deltaTime);
+
+        if (transform.position.z > limiteZ)
+        {
+            transform.position = posicaoInicial;
+        }
+    }
+}
