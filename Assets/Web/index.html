@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Midtown Madness Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #eee;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ffcc00;
+        }
+        .menu {
+            margin-top: 50px;
+        }
+        .menu button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .menu button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Midtown Madness Clone</h1>
+    <p>Escolha sua cidade:</p>
+    <div class="menu">
+        <button onclick="carregarCena('Londres')">Londres</button>
+        <button onclick="carregarCena('SaoFrancisco')">São Francisco</button>
+        <button onclick="carregarCena('MenuInicial')">Menu Inicial</button>
+    </div>
+
+    <script>
+        function carregarCena(cidade) {
+            alert("Carregando cena: " + cidade);
+            // Aqui você pode integrar com Unity WebGL build
+            // Exemplo: window.location.href = cidade + ".html";
+        }
+    </script>
+</body>
+</html>
